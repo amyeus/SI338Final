@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fridge Finder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="nav">
+        <h1>Fridge Finder</h1>
+        <p id="dateDisplay">Welcome to Fridge Finder! Today is: <span id="currentDate"></span>.</p>
+        
+    </header>
+
+    <p id="introInfo"> To track the food items in your fridge and get notified when they're about to expire, proceed below: </p>
+
+    <main>
+
+        <form id="itemForm">
+            <h2>Food Entry </h2>
+            
+            <p>Please enter the food item's name and select the Expiration Date. Once completed, click "Add to Fridge" to update these items into Your Fridge.</p>
+
+            <div>
+                <label for="itemName">Food:</label>
+                <input type="text" id="itemName" required>
+            </div>
+        
+            <div>
+                <label for="expiryDate">Expiration Date:</label>
+                <input type="date" id="expiryDate" required>
+            </div>
+        
+            <button type="submit">Add to Fridge</button>
+        </form>
+
+
+        <section id="fridgeSection">
+            <h2>Your Fridge</h2>
+            <p id="fridgeInfo">Here are the items currently in your fridge. Items expiring soon—within 3 days—are highlighted in yellow, and expired items are highlighted in red. You can remove individual items with the red "X" or clear the entire fridge below.</p>
+
+
+            <div id="fridgeGrid" class="grid">
+                
+                <div class="item-row">
+                    <span class="item-name">Eggs</span>
+                    <span class="item-expiry">2025-11-23</span>
+                    <button class="remove-btn" aria-label="Remove item">✕</button>
+                </div>
+            </div>
+
+            <button id="clearFridge" aria-label="Clear Fridge" class="clear-btn">Clear Fridge 🗑️</button>
+        </section>
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

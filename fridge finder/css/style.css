@@ -1,0 +1,278 @@
+.nav {
+    background: #2a4d69;
+    padding: 14px 20px;
+    border-bottom: 2px solid #d6e7f5;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    margin: 0 0 50px 0;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+    font-size: 45px;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    padding-bottom: 6px;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header p {
+    display: block;
+    font-size: 22px;
+    color: white;
+    margin-top: 4px;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #d0ebff, #a8d8ff);
+    padding: 20px;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+
+#fridgeSection {
+    background: #ffffffcc; 
+    backdrop-filter: blur(8px);
+    border: 2px solid #d6e7f5;
+    border-radius: 18px;
+    padding: 20px;
+    max-width: 85%;
+    margin: 20px auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+ h2 {
+    text-align: center;
+    color: #2a4d69;
+    margin-bottom: 20px;
+}
+
+
+#fridgeGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.item-row {
+    background: #f8fbff;  
+    border: 1.8px solid #cddff2;
+    border-radius: 12px;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+.item-name {
+    font-weight: 600;
+    color: #2a4d69;
+    text-transform: capitalize;
+}
+
+
+.item-expiry {
+    font-size: 14px;
+    color: #3c6e71;
+}
+
+#introInfo {
+    margin: 0 20px 35px 20px;
+}
+
+form {
+    background: white;
+    padding: 15px;
+    margin: 0 auto 20px auto;
+    max-width: 85%;
+    border-radius: 16px;
+    border: 2px solid #d6e7f5;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+form div {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #2a4d69;
+}
+
+input {
+    width: 100%;
+    padding: 2px;
+    border: 2px solid #b7d0e8;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    background: #2a4d69;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e384b;
+}
+
+.clear-btn {
+display: flex;
+justify-self: end;
+margin-top: 25px;
+}
+
+.remove-btn {
+    background: #e61515;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    padding: 0px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.remove-btn:hover {
+    background: #e25555;
+}
+
+:focus-visible {
+    outline: 3px solid black;
+}
+
+@media (min-width: 720px) {
+    #fridgeGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+    }
+
+    form div {
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    form input {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    form button[type="submit"] {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 10px auto 0 auto;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background: linear-gradient(120deg, #0f1822, #162635);
+        color: #e8f0ff;
+    }
+
+    .nav {
+        background: #1e2b3a;
+        border-bottom: 2px solid #3a4f66;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .nav h1 {
+        color: #d6e8ff;
+    }
+
+    #fridgeSection {
+        background: #1e2b3acc;
+        border: 2px solid #3a4f66;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    }
+
+    h2 {
+        color: #d6e8ff;
+    }
+
+    .item-row {
+        background: #243448;
+        border: 1.8px solid #3d556f;
+        color: #e8f0ff;
+    }
+
+    .item-name {
+        color: #d6e8ff;
+    }
+
+    .item-expiry {
+        color: #b7c8e5;
+    }
+
+    form {
+        background: #1e2b3a;
+        border: 2px solid #3a4f66;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    }
+
+    label {
+        color: #d6e8ff;
+    }
+
+    input {
+        background: #2c3e55;
+        color: #e8f0ff;
+        border-color: #4f6b89;
+    }
+
+    button {
+        background: #4f6b89;
+        color: #ffffff;
+    }
+
+    button:hover {
+        background: #3d556f;
+    }
+
+    .remove-btn {
+        background: #a62828;
+    }
+
+    .remove-btn:hover {
+        background: #c63f3f;
+    }
+
+    :focus-visible {
+        outline: 3px solid white;
+    }
+}
+
+.expiring {
+    border: 3px solid #f7c948;
+    border-radius: 8px;
+}
+
+.expired {
+    border: 3px solid #e24e42;
+    border-radius: 8px;
+}
