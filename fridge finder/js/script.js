@@ -75,7 +75,6 @@ function updateExpiryColors() {
         let diff = expDate - today;
         let daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
 
-        // remove old classes
         row.classList.remove("expiring", "expired");
 
         if (daysLeft < 0) {
